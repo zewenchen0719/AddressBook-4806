@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Output:</h1>
+        <div th:each="abr : ${addressbookrepository}">
+            <p th:text="${abr.toString()}"> </p>
+        </div>
+</body>
+</html>
