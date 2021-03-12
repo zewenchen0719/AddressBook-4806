@@ -10,4 +10,5 @@ public interface AddressBookRepository extends CrudRepository<AddressBook, Long>
 
     List<AddressBook> findAll();
     AddressBook findById(long id);
+
 }

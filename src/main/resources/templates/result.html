@@ -5,9 +5,12 @@
     <title>My Page</title>
 </head>
 <body>
-    <h1>Output:</h1>
-        <div th:each="abr : ${addressbookrepository}">
-            <p th:text="${abr.toString()}"> </p>
-        </div>
+<h1>Result:</h1>
+
+<div th:each="buddy : ${bir}">
+    <p th:text="${buddy.toString}"> </p>
+
+</div>
+<a href="/buddyinfo">Submit another message</a>
 </body>
 </html>
